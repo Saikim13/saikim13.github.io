@@ -1,0 +1,139 @@
+.search_input {
+    width: 200px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    padding: 0 16px;
+    color: #444;
+    transition: .4s ease;
+  }
+  
+  .search_input:focus {
+    border-bottom: 1x solid #111;
+  }
+  
+  
+
+nav {
+  font-family: montserrat;
+  background: #0082e6;
+  height: 70px;
+  width: 100%;
+}
+
+label.tittle {
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+  color: white;
+  font-size: 15px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+a.active,a:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+
+.repo_item{
+  margin: 8px;
+  padding: 8px;
+  background: #68bdff;
+  border-radius: 8px;
+  width: 40%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.repo_list {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  height: 100%;
+  margin: 0;
+  padding: 1rem;
+}
+
+#search{
+  display: flex;
+  background-color: #0082e699;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.search_input{
+  border: #0082e6 1px solid;
+  margin-right: 16px;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  width: 100% !important;
+}
+
+#loading {
+  color: black;
+  position: absolute;
+}
+
+.container_itens {
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+    
+  nav{
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  label.tittle {
+      font-size: 20px;
+      line-height: 60px;
+      padding: 0 10px;
+      font-weight: bold;
+  }
+
+  nav ul li {
+      display: inline-block;
+      line-height: 40px;
+      margin: 0 5px;
+  }
+  nav ul li a{
+      font-size: 10px;
+      padding: 5px 11px;
+      border-radius: 3px;
+      text-transform: uppercase;
+  }
+
+}
